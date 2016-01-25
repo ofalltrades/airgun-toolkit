@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160125014250) do
+ActiveRecord::Schema.define(version: 20160125061549) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20160125014250) do
     t.integer "generation"
     t.float   "caliber",    null: false
     t.string  "user_id",    null: false
+    t.text    "notes"
   end
 
   create_table "pellets", force: :cascade do |t|
