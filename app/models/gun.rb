@@ -1,1 +1,4 @@
-class Gun < ActiveRecord::Base; end
+class Gun < ActiveRecord::Base
+  has_many :pellets
+  belongs_to :user
+end

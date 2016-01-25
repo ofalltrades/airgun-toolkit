@@ -1,1 +1,3 @@
-class Grouping < ActiveRecord::Base; end
+class Grouping < ActiveRecord::Base
+  belongs_to :pellet
+end
