@@ -1,5 +1,4 @@
-class GroupingsController < ApplicationController
-  def new; end
+class PelletDatasController < ApplicationController
   def create; end
   def show; end
   def destroy; end

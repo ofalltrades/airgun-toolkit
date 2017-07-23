@@ -1,4 +1,4 @@
-class CreateGuns < ActiveRecord::Migration
+class CreateGuns < ActiveRecord::Migration[4.2]
   def change
     create_table :guns do |t|
       t.string    :brand,       null: false

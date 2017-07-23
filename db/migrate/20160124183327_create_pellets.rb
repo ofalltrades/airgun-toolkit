@@ -1,4 +1,4 @@
-class CreatePellets < ActiveRecord::Migration
+class CreatePellets < ActiveRecord::Migration[4.2]
   def change
     create_table :pellets do |t|
       t.string  :brand,         null: false
