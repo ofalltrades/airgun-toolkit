@@ -13,12 +13,12 @@ class GunsController < ApplicationController
     params.require(:data).permit(
       :make,
       :model,
-      :caliber #,
-      # pellet: [
-      #   :id,
-      #   :muzzle_velocity,
-      #   :muzzle_energy
-      # ]
+      :caliber,
+      ballistic_data: [
+        :id,
+        :muzzle_velocity,
+        :muzzle_energy
+      ]
     )
   end
 end

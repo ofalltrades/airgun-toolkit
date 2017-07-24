@@ -1,4 +1,4 @@
-class PelletData
+class BallisticData
   include Mongoid::Document
   include Mongoid::Timestamps
   include Mongoid::Attributes::Dynamic
@@ -9,5 +9,7 @@ class PelletData
 
   embedded_in :gun
 
-  embeds_many :pellet
+  def self.pellet
+    Pellet.find pellet_id
+  end
 end
