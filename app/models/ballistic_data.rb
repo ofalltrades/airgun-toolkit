@@ -1,15 +1,15 @@
 class BallisticData
   include Mongoid::Document
-  include Mongoid::Timestamps
-  include Mongoid::Attributes::Dynamic
 
   field :pellet_id, type: String
   field :muzzle_energy, type: Float
   field :muzzle_velocity, type: Float
 
+  validates_presence_of :pellet_id
+
   embedded_in :gun
 
-  def self.pellet
+  def pellet
     Pellet.find pellet_id
   end
 end

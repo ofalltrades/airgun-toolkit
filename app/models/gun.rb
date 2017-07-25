@@ -1,13 +1,14 @@
 class Gun
   include Mongoid::Document
-  include Mongoid::Timestamps
-  include Mongoid::Attributes::Dynamic
 
   field :make, type: String
   field :model, type: String
   field :caliber, type: Float
 
-  embedded_in :user
+  validates_presence_of :caliber
+
+  belongs_to :user
 
   embeds_many :ballistic_datas
+  accepts_nested_attributes_for :ballistic_datas
 end

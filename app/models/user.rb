@@ -1,11 +1,11 @@
-class Pellet
+class User
   include Mongoid::Document
-  include Mongoid::Timestamps
-  include Mongoid::Attributes::Dynamic
 
   field :first_name, type: String
   field :last_name, type: String
-  field :user_name, type: String
+  field :username, type: String
 
-  embeds_many :guns
+  validates_presence_of :username
+
+  has_many :guns
 end
