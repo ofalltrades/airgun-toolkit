@@ -44,8 +44,8 @@ end
 group :test do
   # gem 'rails-controller-testing'
   gem 'minitest-reporters'
-  gem 'guard'
-  gem 'guard-minitest'
+  # gem 'guard'
+  # gem 'guard-minitest'
   # gem 'cucumber-rails', :require => false
   # # database_cleaner is not required, but highly recommended
   # gem 'database_cleaner'
