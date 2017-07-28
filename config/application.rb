@@ -22,5 +22,9 @@ module AirgunToolkit
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     # config.active_record.raise_in_transactional_callbacks = true
+
+    %w[presenters].each do |dir|
+      config.autoload_paths += Dir["#{config.root}/app/#{dir}/"]
+    end
   end
 end

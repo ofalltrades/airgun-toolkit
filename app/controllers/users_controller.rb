@@ -4,7 +4,10 @@ class UsersController < ApplicationController
   def index
     respond_to do |format|
       format.html
-      format.json { @users = User.all }
+      format.json do
+        render json: UserPresenter.as_json(User.all, params[:desired_fields]),
+               status: :ok
+      end
     end
   end
 
