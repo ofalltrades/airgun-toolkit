@@ -27,6 +27,6 @@ class UsersController < ApplicationController
   end
 
   def user
-    @user ||= User.fine params[:id]
+    @user ||= User.find params[:id]
   end
 end
