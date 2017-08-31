@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  resources :users, :guns, :pellets
-  root 'users#show'
+  scope '/api' do
+    resources :users, :guns, :pellets
+    # root 'users#show'
+  end
 end

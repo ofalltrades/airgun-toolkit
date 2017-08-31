@@ -26,6 +26,7 @@ group :development, :test do
   # Maybe tryout pry-byebug at some point
   gem 'byebug', platform: :mri
   gem 'pry'
+  gem 'pry-remote'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'capybara'

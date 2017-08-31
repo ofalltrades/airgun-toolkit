@@ -1,0 +1,6 @@
+{
+  "name": "airgun-toolkit",
+  "scripts": {
+    "start": "foreman start -p 3000"
+  }
+}

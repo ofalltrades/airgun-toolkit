@@ -113,6 +113,9 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-remote (0.1.8)
+      pry (~> 0.9)
+      slop (~> 3.0)
     public_suffix (2.0.5)
     puma (3.9.1)
     rack (2.0.3)
@@ -240,6 +243,7 @@ DEPENDENCIES
   mongoid (~> 6.2.0)
   pg
   pry
+  pry-remote
   puma
   rails (= 5.1.2)
   rails_12factor (= 0.0.2)

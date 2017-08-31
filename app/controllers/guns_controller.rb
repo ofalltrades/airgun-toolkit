@@ -1,5 +1,10 @@
+require 'pry-remote'
 class GunsController < ApplicationController
-  before_action :gun, except :create
+  before_action :gun, except: [:create, :index]
+
+  def index
+    render json: { gun: gun.make }
+  end
 
   def create
     render :create if Gun.new(gun_params).save
@@ -31,6 +36,6 @@ class GunsController < ApplicationController
   end
 
   def gun
-    @gun ||= Gun.find gun_params[:id]
+    @gun ||= Gun.find params[:id]
   end
 end
