@@ -1,0 +1,6 @@
+- setup react and flesh out front-end
+- use jbuilder files
+- move over to presenter experiment
+- complete api experiment
+    - maybe use presenters
+- some other stuff
